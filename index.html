@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fontawsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font popines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+<!-- bootsrap cdn css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="navbar">
+    <nav >
+        <h2>QR CODE GENRETOR</h2>
+        <div class="menu">
+          <div class="login-btn">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signUp">Sign Up</a>
+          </div>
+          <ul>
+           <li><a href="#">home</a></li>
+           <li> <a href="#">about</a></li>
+            <li><a href="#">testimonial</a></li>
+           <li> <a href="#">contact</a></li>
+          </ul>
+           
+        </div>
+        <img src="menu.png" alt="" id="menuBtn">
+     
+    </nav>
+ </header>
+ <main>
+    <header></header>
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-5 qr-info">
+                    <h2>QR CODE GENREATOR</h2> 
+                    <p> Create your custom QR Code by just entring URL or Text in input field and download QR CODE for futher use.</p>
+                    <P> QR Code is a two-dimensional barcode that is readable by smartphones. It allows to encode over 4000 characters in a two dimensional barcode.</P>
+                    <p class="mb-4">Enter URL Link to open when scanned, e.g. https://example.co/ Static QR Code Content is directly encoded in the image. </p>
+                    <a href="#url" class="startedBtn">Get Started</a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="QRCODE.gif" alt="" class=" qrImg img-fluid    ">
+                </div>
+            </div>
+        
+            
+        </div>
+        <div class="container mt-5 pt-5 qr-form">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mt-5 ">
+                <form id="Genrate_form">
+                  
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="url" placeholder="Enter URL or Text" >
+                   </div>
+
+              
+                   <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example" id="select">
+                            
+                            <option value="100">100x100</option>
+                            <option value="200" >200x200</option>
+                            <option value="300" selected>300x300</option>
+                            <option value="400" >400x400</option>
+                            <option value="500" >500x500</option>
+                          
+                          </select>
+                   </div>
+             
+                    <button type="submit" class="btn btn-primary form-control" id="qr-btn">Genrate QR Code</button>
+              
+                  </form>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-5 " id="qrcode"></div>
+        </div>
+      
+        </div>
+        
+    </section>
+ </main>
+ <!-- boostrap cdn js link -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
